@@ -58,15 +58,73 @@
 
 //------------------------------------------------------------------------
 
+
+//Desafio 1
+
+// const massMark = 78;
+// const heightMark = 1.69;
+
+// const massJohn = 92;
+// const heightJohn = 1.95;
+
+// const markBMI = massMark / heightMark **2;
+// const johnBMI = massJohn / (heightJohn * heightJohn);
+
+// console.log(markBMI, johnBMI);
+
+// console.log(markBMI >= johnBMI);
+
+//------------------------------------------------------------------------
+
+// const firstName = 'Felipe';
+// const job = 'programmer';
+// const birthYear = 1994;
+// const year = 2037;
+
+// const felipe = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+// console.log(felipe);
+
+// const felipeNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`
+// console.log(felipeNew)
+
+
+//------------------------------------------------------------------------
+
+// const age = 15;
+// const isOldEnough = age >= 18;
+
+// if (isOldEnough) {
+//     console.log('Sarah can start driving license? 🚗')
+// } else{
+//     const yearsLeft = 18 - age;
+//     console.log(`Sarah is too young. Wait another ${yearsLeft} years`)
+// } 
+
+
+
+// const birthYear = 2012;
+
+// let century; //variável vazia
+// if(birthYear <= 2000) {
+//     century = 20;
+// } else {
+//     century = 21;
+// }
+
+// console.log(century)
+
+
 const massMark = 78;
 const heightMark = 1.69;
-
 const massJohn = 92;
 const heightJohn = 1.95;
 
-const markBMI = massMark / heightMark **2;
-const johnBMI = massJohn / (heightJohn * heightJohn);
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark, BMIJohn);
 
-console.log(markBMI, johnBMI);
-
-console.log(markBMI >= johnBMI);
+if(BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's`);
+} else{
+    console.log(`John's BMI (${BMIJohn}) is heigher than Mark's`);
+}
