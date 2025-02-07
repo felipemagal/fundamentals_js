@@ -190,18 +190,61 @@
 
 //CHALLENGE 3 
 
-const scoreDolphins = 96 + 108 + 89;
-const scoreKoalas = 88 + 91 + 110;
+// const scoreDolphins = 96 + 108 + 89;
+// const scoreKoalas = 88 + 91 + 110;
 
-const avgDolphins = (scoreDolphins) / 3;
-const avgKoalas = (scoreKoalas) / 3;
+// const avgDolphins = (scoreDolphins) / 3;
+// const avgKoalas = (scoreKoalas) / 3;
 
-console.log(avgDolphins, avgKoalas);
+// console.log(avgDolphins, avgKoalas);
 
-if (avgDolphins > avgKoalas) {
-    console.log('Dolphins win the trophy')
-} else if (avgKoalas > avgDolphins)
-    console.log('Koalas win the trophy')
-else if (avgDolphins === avgKoalas)
-    console.log('Both win the trophy');
+// if (avgDolphins > avgKoalas) {
+//     console.log('Dolphins win the trophy')
+// } else if (avgKoalas > avgDolphins)
+//     console.log('Koalas win the trophy')
+// else if (avgDolphins === avgKoalas)
+//     console.log('Both win the trophy');
 
+
+// Switch
+
+const day = 'monday';
+
+switch(day) {
+    case 'monday': //day === monday
+        console.log('Plan  course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples')
+        break
+    case 'friday':
+        console.log('Record videos')
+        break
+    case 'saturday':
+    case 'sunday':
+        console.log('enjoy the weekend :D')
+        break;
+    default:
+        console.log('not a valid day')
+}
+
+
+
+// exemplo de como seria escrito o mesmo exemplo, mas com if else
+// const day = 'wednesday';
+
+// if(day === 'monday') {
+//     console.log('Plan  course structure');
+//     console.log('Go to coding meetup');
+// } else if (day === 'tuesday')
+//     console.log('Prepare theory videos');
+// else if (day === 'wednesday' || day === 'thursday')
+//     console.log('day off')
+// else {
+//     console.log('study')
+// };
