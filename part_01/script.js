@@ -154,11 +154,34 @@
 
 //Exercício 3 - Validação de Senha
 
-const senhaCorreta = 12345;
-const senhaDigitada = prompt('Digite a senha para entrar: ');
+// const senhaCorreta = 12345;
+// const senhaDigitada = prompt('Digite a senha para entrar: ');
 
-if(senhaCorreta == senhaDigitada) {
-    console.log('A senha está correta')
+// if(senhaCorreta == senhaDigitada) {
+//     console.log('A senha está correta')
+// } else {
+//     console.log('Senha incorreta. Tente novamente!')
+// };
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision); //precisa que as duas informaçóes sejam verdadeireas para que o resultado seja True
+console.log(hasDriversLicense || hasGoodVision); //presica apenas de uma das informações serem verdadeiras para o resultado seja True
+console.log(!hasDriversLicense); //! siginifica o oposto. Ou seja: não tem licença para dirigir 
+
+
+// if(hasDriversLicense && hasGoodVision) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone else should drive')
+// } //o resultado é falso porque hasGoodVision é falso *para o exercício seguinte, foi mudado o valor da const para true*
+
+const isTired = false; //C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive!')
 } else {
-    console.log('Senha incorreta. Tente novamente!')
-};
+    console.log('Someone else should drive')
+}
