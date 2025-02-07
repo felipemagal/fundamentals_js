@@ -163,12 +163,14 @@
 //     console.log('Senha incorreta. Tente novamente!')
 // };
 
-const hasDriversLicense = true; //A
-const hasGoodVision = true; //B
+//Operadores de Condição
 
-console.log(hasDriversLicense && hasGoodVision); //precisa que as duas informaçóes sejam verdadeireas para que o resultado seja True
-console.log(hasDriversLicense || hasGoodVision); //presica apenas de uma das informações serem verdadeiras para o resultado seja True
-console.log(!hasDriversLicense); //! siginifica o oposto. Ou seja: não tem licença para dirigir 
+// const hasDriversLicense = true; //A
+// const hasGoodVision = true; //B
+
+// console.log(hasDriversLicense && hasGoodVision); //precisa que as duas informaçóes sejam verdadeireas para que o resultado seja True
+// console.log(hasDriversLicense || hasGoodVision); //presica apenas de uma das informações serem verdadeiras para o resultado seja True
+// console.log(!hasDriversLicense); //! siginifica o oposto. Ou seja: não tem licença para dirigir 
 
 
 // if(hasDriversLicense && hasGoodVision) {
@@ -177,11 +179,29 @@ console.log(!hasDriversLicense); //! siginifica o oposto. Ou seja: não tem lice
 //     console.log('Someone else should drive')
 // } //o resultado é falso porque hasGoodVision é falso *para o exercício seguinte, foi mudado o valor da const para true*
 
-const isTired = false; //C
-console.log(hasDriversLicense && hasGoodVision && isTired);
+// const isTired = false; //C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
 
-if (hasDriversLicense && hasGoodVision && !isTired) {
-    console.log('Sarah is able to drive!')
-} else {
-    console.log('Someone else should drive')
-}
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log('Sarah is able to drive!')
+// } else {
+//     console.log('Someone else should drive')
+// }
+
+//CHALLENGE 3 
+
+const scoreDolphins = 96 + 108 + 89;
+const scoreKoalas = 88 + 91 + 110;
+
+const avgDolphins = (scoreDolphins) / 3;
+const avgKoalas = (scoreKoalas) / 3;
+
+console.log(avgDolphins, avgKoalas);
+
+if (avgDolphins > avgKoalas) {
+    console.log('Dolphins win the trophy')
+} else if (avgKoalas > avgDolphins)
+    console.log('Koalas win the trophy')
+else if (avgDolphins === avgKoalas)
+    console.log('Both win the trophy');
+
