@@ -252,13 +252,19 @@
 
 /////////////////////////////////////////////////////
 
-//OPERADOR CONDICIONAL
+//OPERADOR CONDICIONAL - ternary operator
 
-const age = 23; // um operador sempre produz valor
-age >= 18 ? console.log('i like to drink wine 🍷') :
-console.log('i like to drink water 💧');
+// const age = 23; // um operador sempre produz valor
+// age >= 18 ? console.log('i like to drink wine 🍷') :
+// console.log('i like to drink water 💧');
 
-const drink = age >= 18 ? 'wine' : 'water'
-console.log(drink);
+// const drink = age >= 18 ? 'wine' : 'water'
+// console.log(drink);
 
-console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`) //o conceito de Operador e de expressão é algo que produz um valor. Por isso podemos colocar o valor dentro de ${}
+// console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`) //o conceito de Operador e de expressão é algo que produz um valor. Por isso podemos colocar o valor dentro de ${}
+
+
+//CHALLENGE 4 - calculadora de gorjeta
+const bill = 275;
+const tip = bill >= 50 && bill <=300 ? (15/100)*bill : (20/100)*bill;
+console.log(`The bill was ${bill}, and the tip was ${tip}, and the total value ${bill+tip}`);
