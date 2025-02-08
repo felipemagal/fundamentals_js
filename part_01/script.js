@@ -265,6 +265,13 @@
 
 
 //CHALLENGE 4 - calculadora de gorjeta
-const bill = 275;
-const tip = bill >= 50 && bill <=300 ? (15/100)*bill : (20/100)*bill;
-console.log(`The bill was ${bill}, and the tip was ${tip}, and the total value ${bill+tip}`);
+// const bill = 275;
+// const tip = bill >= 50 && bill <=300 ? (15/100)*bill : (20/100)*bill;
+// console.log(`The bill was ${bill}, and the tip was ${tip}, and the total value ${bill+tip}`);
+
+
+
+const numb = Number(prompt('Digite um número'))
+
+const result = (numb % 2 == 0) ? 'par' : 'ímpar';
+console.log(`número ${numb} é ${result}`)
