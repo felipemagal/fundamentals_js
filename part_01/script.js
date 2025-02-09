@@ -271,7 +271,35 @@
 
 
 
-const numb = Number(prompt('Digite um número'))
+// const numb = Number(prompt('Digite um número'))
 
-const result = (numb % 2 == 0) ? 'par' : 'ímpar';
-console.log(`número ${numb} é ${result}`)
+// const result = (numb % 2 == 0) ? 'par' : 'ímpar';
+// console.log(`número ${numb} é ${result}`)
+
+// const bill = 275;
+// const tip = bill >= 50 && bill <= 300 ? (15/100)*bill : (20/100)*bill; console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`)
+
+// const num = Number(prompt('Digite um número'));
+
+// const numResult = num > 0 ? 'positivo' : num < 0 ? 'negativo' : 'o número é zero'
+// console.log(`O número ${num} é ${numResult}`)
+
+// const age = Number(prompt('Digite sua idade'));
+
+// const ageAdult = age >= 18 ? 'Você é maior de idade' : 'você é menor de idade';
+// console.log(`Você tem ${age} anos e por isso você é ${ageAdult}`)
+
+// const bill = 199;
+
+// const desconto = bill >= 200 ? (bill*15)/100 : (bill*5)/100;
+// console.log(`A conta deu ${bill} e o desconto foi de ${desconto}. O valor final ${bill - desconto}`)
+
+// const horas = new Date().getHours(); //obtém a hora atual do sistema
+
+// const mensagem = horas <=11 && horas >=0 ? 'bom dia' : horas >=12 && horas <=17 ? 'boa tarde' : 'boa noite'; console.log(`${mensagem}, agora são ${horas} horas`)
+
+
+//como saber se o número é multiplo de 5
+
+// const num = Number(prompt('Digite um número'));
+// const multFive = (num % 5 === 0) ? 'o número é multiplo de 5' : 'o número não é multiplo de 5'; console.log(`${num} é ${multFive}`)
